@@ -1,6 +1,6 @@
 # Dependencies:
-Python >= 3.7  
-PyTorch = 1.2.0  
+## Python >= 3.7  
+## PyTorch = 1.2.0  
 numpy = 1.22.3  
 pandas = 1.2.1  
 scikit-learn = 1.0.2  

@@ -60,5 +60,7 @@ EduKTM: https://github.com/bigdata-ustc/EduKTM
 Train and Test
 ===
 
-Please click on the link above to download the corresponding datasets. Then, change the location where the datasets are stored in the run.py, and use this file to train the model. We also provide the comparison methods in Baselines. To run these methods, empoly the prepare_data.py in the ClusterKT folder to read data according to the model's input. In the Baselines config.py file, we place the code for exercise difficulty and concept difficulty required in DIMKT, and for Q matrix construction required in LBKT and LPKT.
+0. Please click on the link above to download the corresponding datasets. Change the location where the datasets are stored in the run.py
+1. Use the run.py file to train ClusterKT.
+2. We also provide the comparison methods in Baselines. To run these methods, empoly the prepare_data.py in the ClusterKT folder to read data according to the model's input. In the Baselines config.py file, we place the code for exercise difficulty and concept difficulty required in DIMKT, and for Q matrix construction required in LBKT and LPKT.
 

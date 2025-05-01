@@ -1,11 +1,5 @@
 from tqdm import tqdm
 import mxnet as mx
-from XKT.meta import KTM
-from XKT.utils import SLMLoss
-from baize import get_params_filepath, get_epoch_params_filepath, path_append
-from baize.const import CFG_JSON
-from baize.mxnet import light_module as lm, Configuration, fit_wrapper, split_and_load
-from baize.metrics import classification_report
 from SKT.etl import etl
 from SKT.net import get_net
 

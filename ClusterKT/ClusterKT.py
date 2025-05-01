@@ -9,11 +9,6 @@ import numpy as np
 from torch.nn import Parameter
 import seaborn as sb
 
-class Dim(IntEnum):
-    batch = 0
-    seq = 1
-    feature = 2
-
 class ClusterKT(nn.Module):
     def __init__(self, n_question, n_pid, d_model,
                  n_blocks, kq_same, dropout, model_type,

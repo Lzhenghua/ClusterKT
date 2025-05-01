@@ -72,7 +72,6 @@ class DIMKT(Module):
         h = list()
         # h.append(unsqueeze(k, dim=1))
         # h.append(unsqueeze(k, dim=1))
-
         seqlen = q.size(1)
         for i in range(1, seqlen + 1):
             sd_1 = squeeze(slice_sd_embedding[i], 1)

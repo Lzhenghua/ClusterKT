@@ -35,7 +35,6 @@ class KTModel(nn.Module):
     self.fusion2_1 = nn.Linear(emb_dim, emb_dim)
     self.fusion2_2 = nn.Linear(emb_dim, emb_dim)
     
-
   def forward(self, skill, answer, diff, hints, time_used):
     # input: (batch_size, seq_len, emb_dim)
     bs = skill.size(0)

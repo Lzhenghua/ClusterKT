@@ -10,7 +10,7 @@ from .etl import etl
 from .net import get_net
 
 
-@fit_wrapper
+
 def fit(net, batch_data, loss_function, *args, **kwargs):
     item_id, data, data_mask, label, next_item_id, label_mask = batch_data
     output, _ = net(item_id, data, data_mask)
@@ -75,7 +75,7 @@ class MSKT(KTM):
     def eval(self, test_data, *args, **kwargs) -> ...:
         return evaluation(self.net, test_data, *args, **kwargs)
 
-    @classmethod
+
     def from_pretrained(cls, model_dir, best_epoch=None, *args, **kwargs):
         cfg_path = path_append(model_dir, CFG_JSON)
         model = MSKT(init_net=True, cfg_path=cfg_path, model_dir=model_dir)
@@ -86,7 +86,7 @@ class MSKT(KTM):
         )
         return model
 
-    @classmethod
+
     def benchmark_train(cls, train_path, valid_path=None, enable_hyper_search=False,
                         save=False, *args, **kwargs):
         dkt = MSKT(init_net=not enable_hyper_search, *args, **kwargs)
@@ -95,7 +95,7 @@ class MSKT(KTM):
         dkt.train(train_data, valid_data, re_init_net=enable_hyper_search, enable_hyper_search=enable_hyper_search,
                   save=save)
 
-    @classmethod
+
     def benchmark_eval(cls, test_path, model_path, best_epoch, *args, **kwargs):
         dkt = MSKT.from_pretrained(model_path, best_epoch)
         test_data = etl(test_path, dkt.cfg)

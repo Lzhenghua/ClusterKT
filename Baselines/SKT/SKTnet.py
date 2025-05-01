@@ -5,7 +5,6 @@ import mxnet as mx
 from XKT.utils.nn import GRUCell, begin_states, get_states, expand_tensor
 from .utils import Graph
 
-
 def get_net(ku_num, graph_params=None, net_type="SKT", k=2, **kwargs):
     if net_type == "SKT":
         return SKT(ku_num, graph_params, **kwargs)

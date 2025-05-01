@@ -51,6 +51,10 @@ LBKT: https://github.com/bigdata-ustc/EduKTM/tree/main/EduKTM/LBKT
 
 LPKT: https://github.com/bigdata-ustc/EduKTM/tree/main/EduKTM/LPKT
 
+SKT: https://github.com/bigdata-ustc/XKT
+
+IPAKT: https://github.com/SummerGua/IPAKT
+
 EduKTM: https://github.com/bigdata-ustc/EduKTM
 
 Train and Test

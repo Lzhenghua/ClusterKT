@@ -12,7 +12,6 @@ from torch.nn.functional import one_hot, cross_entropy, multilabel_margin_loss, 
 import random
 import time
 
-
 class sparseKT(nn.Module):
     def __init__(self, n_question, n_pid, 
             d_model, n_blocks, dropout, d_ff=256, 

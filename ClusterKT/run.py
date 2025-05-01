@@ -40,6 +40,7 @@ def run(args):
 
     group = train_df[["uuid", "upid", "ucid", "is_correct",'timestamp_TW','total_sec_taken']].groupby("uuid").apply(
         lambda r: (r.upid.values, r.ucid.values, r.is_correct.values,r.timestamp_TW.values,r.total_sec_taken.values))
+    
     del train_df
     gc.collect()
     print("splitting")

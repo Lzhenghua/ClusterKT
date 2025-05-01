@@ -20,6 +20,7 @@ def set_opt(dataset):
         arg_parser.add_argument("--epoch", dest="epoch", default=100, type=int, required=False)
         arg_parser.add_argument("--max_len", dest="max_len", default=100, type=int, required=False)
         arg_parser.add_argument("--save_params", dest="save_params", default=False, type=bool, required=False)
+        
     elif dataset = 'NIPS34':
         arg_parser.add_argument("--learning_rate", dest="learning_rate", default=0.001, type=float, required=False)
         arg_parser.add_argument("--kq_same", dest="kq_same", default=1, type=int, required=False)
@@ -36,6 +37,7 @@ def set_opt(dataset):
         arg_parser.add_argument("--epoch", dest="epoch", default=100, type=int, required=False)
         arg_parser.add_argument("--max_len", dest="max_len", default=100, type=int, required=False)
         arg_parser.add_argument("--save_params", dest="save_params", default=False, type=bool, required=False)
+        
     elif dataset = 'Assist15':
         arg_parser.add_argument("--learning_rate", dest="learning_rate", default=0.001, type=float, required=False)
         arg_parser.add_argument("--kq_same", dest="kq_same", default=1, type=int, required=False)
@@ -52,6 +54,7 @@ def set_opt(dataset):
         arg_parser.add_argument("--epoch", dest="epoch", default=100, type=int, required=False)
         arg_parser.add_argument("--max_len", dest="max_len", default=100, type=int, required=False)
         arg_parser.add_argument("--save_params", dest="save_params", default=False, type=bool, required=False)
+        
     else:
       arg_parser.add_argument("--learning_rate", dest="learning_rate", default=0.001, type=float, required=False)
         arg_parser.add_argument("--kq_same", dest="kq_same", default=1, type=int, required=False)

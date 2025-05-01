@@ -11,6 +11,11 @@ Train and Test
 
 4.We also provide the comparison methods in Baselines. To run these methods, empoly the prepare_data.py in the ClusterKT folder to read data according to the model's input.In the Baselines config.py file, we place the code for exercise difficulty and concept difficulty required in DIMKT, and for Q matrix construction required in LBKT and LPKT.
 
+Operation:
+===
+
+run.py -> prepare_data.py -> utils.py -> ClusterKT.py -> loss.py
+
 Dependencies:
 ===
 

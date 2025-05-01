@@ -34,7 +34,7 @@ class AKT(nn.Module):
             nn.Linear(256, 1)
         )
         self.reset()
-
+                     
     def reset(self):
         for p in self.parameters():
             if p.size(0) == self.n_pid+1 and self.n_pid > 0:

@@ -29,7 +29,7 @@ pandas = 1.2.1
 
 scikit-learn = 1.0.2
 
-scipit = 1.8.0
+scipy = 1.8.0
 
 Datasets:
 ===
